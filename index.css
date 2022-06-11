@@ -1,0 +1,97 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --blue-main-BG: hsl(217, 54%, 11%);
+  --blue-card-BG: hsl(216, 50%, 16%);
+  --blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: font-outift;
+  src: url('https://fonts.google.com/specimen/Outfit');
+}
+
+/* --global-- */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: font-outfit;
+  font-size: 18px;
+  background: var(--blue-main-BG);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 20px 0;
+  font-size: x-large;
+}
+footer {
+  position: absolute;
+  bottom: 5px;
+  width:100%;
+  text-align: center;
+  color: var(--white);
+}
+p {
+  margin: 0 0 20px 0;
+  color: var(--soft-blue);
+}
+
+/* --card-- */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--blue-card-BG);
+  color: var(--white);
+  border-radius: 15px;
+  margin: 25px;
+  padding: 22px;
+  max-width: 300px;
+}
+#eq-img {
+  border-radius: 15px;
+  width:100%;
+}
+.svg-container {
+  display: flex;
+  justify-content: space-between;
+}
+.eth-container {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  height:18px;
+}
+.time-container {
+  color: var(--soft-blue);
+  display: flex;
+  align-items: center;
+  height:18px;
+}
+.svg {
+  margin-right: 10px;
+}
+.line-break {
+  border-top: 1px solid var(--blue-line);
+  margin: 20px 0;
+}
+.avatar-container{
+  color:var(--soft-blue);
+  display: flex;
+  align-items: center;
+}
+.avatar-container > a {
+  color:var(--white);
+  text-decoration: none;
+}
+#avatar-img {
+  width:30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right:20px;
+}
