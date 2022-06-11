@@ -30,6 +30,10 @@ h1 {
   margin: 20px 0;
   font-size: x-large;
 }
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
 footer {
   position: absolute;
   bottom: 5px;
@@ -53,9 +57,39 @@ p {
   padding: 22px;
   max-width: 300px;
 }
+#eq-img-container {
+  position: relative;
+}
 #eq-img {
   border-radius: 15px;
   width:100%;
+}
+#blue-hover {
+  position: absolute;
+  height: calc(100% - 4px);
+  width: 100%;
+  top:0;
+  border-radius: 15px;
+  background: var(--cyan);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#view-svg {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  opacity: 0;
+}
+#blue-hover:hover {
+  opacity: .4;
+  cursor: pointer;
+}
+#blue-hover:hover + #view-svg {
+  opacity: 1;
 }
 .svg-container {
   display: flex;
@@ -88,6 +122,9 @@ p {
 .avatar-container > a {
   color:var(--white);
   text-decoration: none;
+}
+.avatar-container > a:hover {
+  color:var(--cyan);
 }
 #avatar-img {
   width:30px;

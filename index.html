@@ -10,28 +10,34 @@
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-  <div class="card-container">
-    <img id='eq-img' alt='Equilibrium' src='./images/image-equilibrium.jpg'/>
-    <h1>Equilibrium #3429</h1>
-    <p>
-      Our Equilibrium collection promotes balance and calm.
-    </p>
-    <div class="svg-container">
-      <div class="eth-container">
-        <img class='svg' src="./images/icon-ethereum.svg" alt="Ethereum icon svg">
-        0.041 ETH
+  <main>
+    <div class="card-container">
+      <div id="eq-img-container">
+        <img id='eq-img' alt='Equilibrium' src='./images/image-equilibrium.jpg'/>
+        <div id="blue-hover"></div>
+        <img id='view-svg' alt='View SVG' src='./images/icon-view.svg'/>
       </div>
-      <div class="time-container">
-        <img class='svg' src="./images/icon-clock.svg" alt="Clock icon svg">
-        3 days left 
+      <h1>Equilibrium #3429</h1>
+      <p>
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="svg-container">
+        <div class="eth-container">
+          <img class='svg' src="./images/icon-ethereum.svg" alt="Ethereum icon svg">
+          0.041 ETH
+        </div>
+        <div class="time-container">
+          <img class='svg' src="./images/icon-clock.svg" alt="Clock icon svg">
+          3 days left 
+        </div>
+      </div>
+      <div class="line-break"></div>
+      <div class="avatar-container">
+        <img id='avatar-img' alt='Avatar' src='./images/image-avatar.png'/>
+        Creation of&nbsp;<a href="#">Jules Wyvern</a>
       </div>
     </div>
-    <div class="line-break"></div>
-    <div class="avatar-container">
-      <img id='avatar-img' alt='Avatar' src='./images/image-avatar.png'/>
-      Creation of&nbsp;<a href="#">Jules Wyvern</a>
-    </div>
-  </div>
+  </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.github.com/mattie43">Matt Ericksen</a>.
